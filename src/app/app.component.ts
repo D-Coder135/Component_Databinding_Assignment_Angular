@@ -11,6 +11,8 @@ export class AppComponent {
   evenNumbers: number[] = [];
 
   onIntervalFired(lastFiredNumber: number) {
-    console.log(lastFiredNumber);
+    if (lastFiredNumber % 2 == 0) {
+      this.evenNumbers.push(lastFiredNumber);
+    }
   }
 }
