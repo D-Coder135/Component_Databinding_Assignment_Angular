@@ -9,6 +9,7 @@ export class GameControlComponent implements OnInit {
 
   intervalFired = new EventEmitter<number>();
   interval;
+  lastNumber = 0;
 
   constructor() {
   }
