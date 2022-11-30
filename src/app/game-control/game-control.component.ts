@@ -18,6 +18,8 @@ export class GameControlComponent implements OnInit {
   }
 
   onStartGame() {
+    this.interval = setInterval(() => {
 
+    }, 1000);
   }
 }
