@@ -25,7 +25,7 @@
   </div>
   <div class="row">
     <div class="col-xs-12">
-      <app-odd></app-odd>
+      <app-odd *ngFor="let oddNumber of oddNumbers" [number]="oddNumber"></app-odd>
     </div>
   </div>
 </div>
